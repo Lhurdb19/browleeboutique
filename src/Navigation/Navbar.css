@@ -1,0 +1,492 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    position: fixed;
+    z-index: 99;
+    padding: 10px 50px 10px 70px;
+    background-color: rgba(174, 172, 172, 0.5);
+}
+
+@media screen and (max-width:896px) {
+    .nav-container {
+        width: 100%;
+        height: 50px;
+        gap: 20px;
+        padding: 10px;
+    }
+}
+
+.search-bar {
+    width: 100%;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+  @media screen and (max-width:896px) {
+    .search-bar {
+        width: 100%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+        z-index: 10;
+        top: 50px;
+        background-color: #fff;
+        border-bottom: 0.2px solid #6496cd;
+    }
+    
+    .search-bar > form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .search-bar > form > input {
+        width: 100%;
+        height: 35px;
+        display: flex;
+        outline: none;
+        padding: 10px;
+        border-radius: 25px;
+        border: 1px dotted #000;
+        background-color: transparent;
+      }
+  }
+
+
+.nav-container > .nav-combine {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.nav-combine > a {
+    font-family: Bebas;
+    font-size: 40px;
+    color: white;
+}
+
+.nav-combine > .menu-bar {
+    display: none;
+    color: white;
+}
+
+@media screen and (max-width:896px) {
+    .nav-container > .nav-combine {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .nav-combine > a {
+        font-size: 35px;
+    }
+
+    .nav-combine > .menu-bar {
+        display: block;
+        display: flex;
+    }
+}
+
+.nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+@media screen and (max-width:896px) {
+    .nav-link {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        left: 0%;
+        top: 50px;
+        gap: 10x;
+        padding: 10px;
+        position: fixed;
+        z-index: 100;
+        transform: translateX(-100%);
+        background-color: #080404;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link.mobile.active {
+        transform: translateX(0%);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.mobile-user-drop {
+    display: none;
+}
+
+
+@media screen and (max-width:896px) {
+    .mobile-user-drop {
+        display: block;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mobile-user-drop > a {
+        color: white;
+        font-family: MontserratLight;
+    }
+    
+    .mobile-user-drop > .user-info {
+        width: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        cursor: pointer;
+        font-family: MontserratLight;
+    }
+    
+    .user-info > .card {
+        width: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        top: 0px;
+        gap: 10px;
+    }
+    .card > a {
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .user-info > .wrapper {
+        width: 150px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        font-family: MontserratLight;
+    }
+    
+    .wrapper > span {
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    span > a {
+        color: white;
+        font-family: MontserratLight;
+    }
+    
+    .delete {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .btn {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .btn > button {
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: MontserratLight;
+        color: white;
+        gap: 10px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+    
+}
+
+.combination {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    font-family: MontserratBold;
+    font-size: 15px;
+}
+
+.combination > a {
+    color: white;
+}
+
+@media screen and (max-width:896px) {
+    .combination {
+        display: none;
+    }
+}
+
+.auth {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    transform: translateX(0px);
+    font-family: MontserratLight;
+}
+
+@media screen and (max-width:896px) {
+    .auth {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        transform: translateX(0px);
+        transform: translateY(-40px);
+    }
+}
+
+.auth > .sign-up {
+    color: white;
+    background-color: #6496cd;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.auth > .login {
+    background-color: #ef1fe5;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+@media screen and (max-width:896px) {
+    .auth > .sign-up {
+        color: white;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 0;
+    }
+    
+    .auth > .login {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 20px;
+        color: #fff;
+    }
+}
+
+.user-drop {
+    width: 65%;
+    gap: 5px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0px);
+}
+
+.user-drop > span {
+    cursor: pointer;
+}
+
+@media screen and (max-width:896px) {
+    .user-drop {
+        width: 200px;
+        display: none;
+    }
+}
+
+.user-profile{
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    top: 53px;
+    padding: 10px;
+    background-color: rgba(43, 41, 41, 0.5);
+    position: absolute;
+}
+
+.user-profile > .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper > a {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: MontserratLight;
+    color: white;
+    gap: 10px;
+}
+
+.wrapper > button {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: MontserratLight;
+    color: white;
+    gap: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.user-profile > button {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: MontserratLight;
+    color: white;
+    gap: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.search-product-result-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+    position: fixed;
+    top: 70px;
+    z-index: 1;
+    background-color: rgba(174, 172, 172, 0.5);
+  }
+  .result-card {
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px 10px;
+  }
+  .result-card > a {
+    color: #000;
+  }
+
+  .nav-link > form {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      transform: translateX(-20px);
+    }
+    .nav-link > form > input {
+        width: 350px;
+        height: 35px;
+        display: flex;
+        outline: none;
+        padding: 10px;
+        border-radius: 25px;
+        border: 1px dotted #000;
+        background-color: transparent;
+  }
+
+@media screen and (max-width:896px) {
+    .nav-link > form {
+        width: 100%;
+        display: none;
+    }
+
+    .search-product-result-overlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 10px;
+        position: fixed;
+        top: 95px;
+        z-index: 1;
+        background-color: rgba(174, 172, 172, 0.5);
+      }
+      .result-card {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        padding: 20px 10px;
+      }
+      .result-card > a {
+        color: #000;
+      }
+}
+
+.product-cart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-cart > .card {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    color: blue;
+}
+
+@media screen and (max-width:896px) {
+    .product-cart {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+}
