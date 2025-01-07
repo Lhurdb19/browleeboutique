@@ -26,6 +26,7 @@ import { IoLogOutOutline } from "react-icons/io5";
 import { FaRegAddressCard } from "react-icons/fa";
 import {useCartStore} from '../Cartstore/useCartStore';
 import { productList } from '../Productdata/productData';
+import { womenProductList } from '../Productdata/womenProduct';
 import './Navbar.css';
 
 function Navbar({ user, handleLogout }) {
@@ -56,6 +57,10 @@ function Navbar({ user, handleLogout }) {
   const filteredProducts = productList.filter((product) =>
       product.name.toLowerCase().includes(searchProduct.toLowerCase())
     );
+
+  const filteredWomen = womenProductList.filter((women) => 
+    women.name.toLowerCase().includes(searchProduct.toLowerCase())  
+  );
  
 
   return (
@@ -73,7 +78,16 @@ function Navbar({ user, handleLogout }) {
             ) : (
               <p>No product found with the specified name.</p>
             )}
-          </div>
+             {filteredWomen.length > 0 ? (
+              filteredWomen.map((women) => (
+                <Link key={women.id} to={`/womenproduct/${women.id}`}>
+                  <h4>{women.name}</h4>
+                </Link>
+              ))
+            ) : (
+              <p>No product found with the specified name.</p>
+            )}
+          </div>  
         </div>
       )}
 
@@ -90,6 +104,7 @@ function Navbar({ user, handleLogout }) {
              <>
              <Link to="/" style={NavLink}>Home</Link>
              <Link to='/product' style={NavLink}>Products</Link>
+             <Link to='/blog' style={NavLink}>Blog</Link>
              </>
 
           ) : (
@@ -120,6 +135,7 @@ function Navbar({ user, handleLogout }) {
           <div className="combination">
             <Link to="/" style={NavLink}>Home</Link>
             <Link to='/product' style={NavLink}>Products</Link>
+            <Link to='/blog' style={NavLink}>Blog</Link>
           </div>
 
         <form>

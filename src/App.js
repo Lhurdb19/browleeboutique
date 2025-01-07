@@ -4,18 +4,20 @@ import Home from "./Routes/home";
 import Login from "./Auth/login";
 import Signup from './Auth/signup'
 import Product from './Routes/product';
+import Productdetail from './Routes/productdetail';
 import Cartlist from './cartListView/cartlist';
 import Shippingdetails from "./Routes/shippingdetails";
 import Orderdetails from "./Routes/orderdetails";
 import Paymentdetails from "./Routes/paymentdetails";
 import Womenfashion from "./Routes/womenfashion";
+import Womendetails from "./Routes/womendetails";
 import Menfashion from "./Routes/menfashion";
 import Kidsfashion from "./Routes/kidsfashion";
 import Shoesfashion from "./Routes/shoesfashion";
 import Accessories from "./Routes/accessories";
-import Productdetail from './Routes/productdetail';
 import Emptycart from "./Routes/emptycart";
 import Navbar from './Navigation/navbar';
+import Blog from "./Routes/blog";
 import Footer from "./Routes/footer";
 import Notfound from "./Routes/notfound";
 import  {useAuthStore}   from './Lib/store';
@@ -33,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
+          <Route path="blog" element={<Blog/>}/>
           <Route path="/womenfashion" element={<Womenfashion/>}/>
           <Route path="/menfashion" element={<Menfashion/>}/>
           <Route path="/shoesfashion" element={<Shoesfashion/>}/>
@@ -46,6 +49,7 @@ function App() {
           <Route path="/paymentdetails" element={<Paymentdetails/>}/>
           <Route path="/emptycart" element={<Emptycart/>}/>
           <Route path="/products/:productId" element={<Productdetail/>} />
+          <Route path="/products/:womenId" element={<Womendetails/>}/>
           <Route path="*" element={<Notfound/>}/>
         </Routes>
         <Footer/>

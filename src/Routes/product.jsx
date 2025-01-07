@@ -2,6 +2,7 @@ import React, { useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { productList } from '../Productdata/productData';
 import { useCartStore } from '../Cartstore/useCartStore'; 
+import Womenfashion from './womenfashion';
 
 
 function Product() {
@@ -50,6 +51,7 @@ function Product() {
               </div>
           ))}
         </div>
+        <Womenfashion/>
       </div>
     </Fragment>
   );
