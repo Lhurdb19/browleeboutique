@@ -10,17 +10,17 @@ function Womenfashion() {
     addItemToCart(women);
   };
 
-  const filteredWomen = womenProductList.filter((women) =>
-    women.name.toLowerCase().includes('')
+  const filteredProducts = womenProductList.filter((women) =>
+    women.name.toLowerCase()
   );
 
   return (
     <>
     <div className='women-mother-container'>
       <div className="women-list">
-        {filteredWomen.map((women) => (
+        {filteredProducts.map((women) => (
           <div key={women.id} className="women-info">
-            <Link to={`products/${women.id}`} className='women-image'>
+            <Link to={`/womenfashion/${women.id}`} className='women-image'>
             <img src={women.images[0]} alt={women.name} />
             </Link>
 

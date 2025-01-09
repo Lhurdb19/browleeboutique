@@ -11,7 +11,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 function Womendetails() {
   const { womenId } = useParams();
   const addItemToCart = useCartStore((state) => state.addItemToCart);
-  const women = womenProductList.find((w) => w.id === parseInt(womenId));
+  const women = womenProductList.find((p) => p.id === parseInt(womenId));
   const [isDescript, setIsDescript] = useState(false);
   const [imageOver, setImageOver] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
@@ -56,6 +56,7 @@ function Womendetails() {
           <IoMdArrowRoundBack style={{ fontSize: "24px" }} />
         </Link>
       </div>
+
       <div className="women-product-list">
         <div className="women-con-1">
           <div className="women-image-container">
@@ -64,7 +65,7 @@ function Womendetails() {
               alt={women.name}
               onClick={() => openImageOver(0)}
             />
-            <div className="women-image-overlay">
+            <div className="women-image-overlay" onClick={() => openImageOver(0)}>
               <span className="plus-sign">+</span>
             </div>
           </div>
@@ -105,8 +106,8 @@ function Womendetails() {
         {imageOver && (
           <div className="image-overlay">
             <MdClose className="close-overlay" onClick={closeImageOver} />
-            <div className="image-content">
-              <img src={women.images[currentImage]} alt="women Image" />
+            <div className="image-over-content">
+              <img src={women.images[currentImage]} alt="Women Image" />
               <MdKeyboardArrowLeft
                 className="arrow-left"
                 onClick={toggleNextImage}

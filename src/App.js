@@ -5,6 +5,7 @@ import Login from "./Auth/login";
 import Signup from './Auth/signup'
 import Product from './Routes/product';
 import Productdetail from './Routes/productdetail';
+import Trendproduct from "./Routes/trendproduct";
 import Cartlist from './cartListView/cartlist';
 import Shippingdetails from "./Routes/shippingdetails";
 import Orderdetails from "./Routes/orderdetails";
@@ -21,6 +22,7 @@ import Blog from "./Routes/blog";
 import Footer from "./Routes/footer";
 import Notfound from "./Routes/notfound";
 import  {useAuthStore}   from './Lib/store';
+import Contact from "./Routes/contact";
 
 
 function App() {
@@ -43,13 +45,15 @@ function App() {
           <Route path="/accessories" element={<Accessories/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/contact" element={<Contact/>}/>
           <Route path="/cartlist" element={<Cartlist />} />
           <Route path="/shippingdetails" element={<Shippingdetails/>}/>
           <Route path="/orderdetails" element={<Orderdetails/>}/>
           <Route path="/paymentdetails" element={<Paymentdetails/>}/>
           <Route path="/emptycart" element={<Emptycart/>}/>
           <Route path="/products/:productId" element={<Productdetail/>} />
-          <Route path="/products/:womenId" element={<Womendetails/>}/>
+          <Route path="/womenfashion/:womenId" element={<Womendetails/>}/>
+          <Route path="/trendproduct" element={<Trendproduct/>}/>
           <Route path="*" element={<Notfound/>}/>
         </Routes>
         <Footer/>
