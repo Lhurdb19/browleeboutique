@@ -66,7 +66,7 @@ function Footer() {
           </div>
           </div>
         </div>
-      <footer>&copy;2024 <Link to={'/'}>BashCode.</Link> All Right Reserved.</footer>
+      <footer>&copy;2024 <Link to={'/'}>HejiDev.</Link> All Right Reserved.</footer>
     </div>
   )
 }
