@@ -49,7 +49,7 @@ function Contact() {
         </div>
 
         <div className="map-con">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d175371.73865643828!2d-99.26527787053304!3d40.44153830490637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1736364596569!5m2!1sen!2sng" width="500" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{border: 'none'}}></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d175371.73865643828!2d-99.26527787053304!3d40.44153830490637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1736364596569!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{border: 'none'}}></iframe>
         </div>
       
     </div>
