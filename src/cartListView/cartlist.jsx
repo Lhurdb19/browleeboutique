@@ -8,7 +8,7 @@ import { FiAlertTriangle } from "react-icons/fi";
 import { IoIosRemoveCircleOutline } from "react-icons/io";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import "./CartList.css";
+
 
 function Cartlist() {
   const { cartItems, cartCount, totalCart, addItemToCart, removeItemFromCart, clearItemFromCart, clearCart } = useCartStore();

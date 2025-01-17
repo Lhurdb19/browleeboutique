@@ -2,14 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { useCartStore } from '../Cartstore/useCartStore';
 import { trendList } from '../Productdata/trendData';
 import { TiStar } from "react-icons/ti";
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 function Trendproduct() {
     const addItemToCart = useCartStore((state) => state.addItemToCart);
     const [visible, setVisible] = useState(5);
 
+    const notify = () => toast.success("Product added successfully to cart!");
+      
 
     const handleAddToCart = (trend) => {
         addItemToCart(trend);
+        notify();
     };
 
     const handleViewMore = () => {
@@ -55,6 +61,8 @@ function Trendproduct() {
                 <button onClick={setVisible(false)} disabled={visible ? 30 : ''} ></button>
             )
             }
+    
+    <ToastContainer  position="top-right" className="toast"/>
     </div>
   )
 }

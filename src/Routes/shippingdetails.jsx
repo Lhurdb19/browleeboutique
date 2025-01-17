@@ -188,7 +188,7 @@ const Shippingdetails = () => {
           <button
             type="submit"
             style={{
-              backgroundColor: isFormCompleted ? "#0e79eb" : "#e8e7e7",
+              backgroundColor: isFormCompleted ? "" : "#e8e7e7",
               cursor: isFormCompleted ? "pointer" : "not-allowed",
             }}
             disabled={!isFormCompleted}>

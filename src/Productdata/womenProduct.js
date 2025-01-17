@@ -1,7 +1,7 @@
 export const womenProductList = [
   {
     id: 100,
-    name: "Abaya Casual For Women",
+    name: "Casual Abaya",
     price: 1290,
     images: [
       "https://5.imimg.com/data5/ANDROID/Default/2021/2/AI/FT/GI/29603120/product-jpeg-500x500.jpg",
@@ -49,7 +49,7 @@ export const womenProductList = [
 
   {
     id: 104,
-    name: "Brown Slacks Inspo",
+    name: "Brown Slacks",
     price: 530,
     images: [
       "https://i.pinimg.com/736x/ba/e6/58/bae658824400b1ff5057ec234f9690c3.jpg",
@@ -73,7 +73,7 @@ export const womenProductList = [
 
   {
     id: 106,
-    name: "Office Casual Outfit",
+    name: "Office Outfit",
     price: 654,
     images: [
       "https://i.pinimg.com/564x/b8/4a/8f/b84a8f818f53a788308016c5407e8cc3.jpg",
@@ -85,7 +85,7 @@ export const womenProductList = [
 
   {
     id: 107,
-    name: "Winter Casual Jacket",
+    name: "Winter Jacket",
     price: 670,
     images: [
       "https://i.pinimg.com/736x/6a/4c/cd/6a4ccde50f190d5e8d688aa97bd1c230.jpg",
@@ -97,7 +97,7 @@ export const womenProductList = [
 
   {
     id: 108,
-    name: "Cozy & Chic Winter Outfit",
+    name: "Cozy & Chic Outfit",
     price: 780,
     images: [
       "https://i.pinimg.com/736x/49/b4/7e/49b47e690040a42c1ca1ab97497acfdf.jpg",

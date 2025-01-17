@@ -106,7 +106,7 @@ const Paymentdetails = () => {
           </p>
           <p>
           
-            <strong>State:</strong> {state.option}
+            <strong>State:</strong> {state}
           </p>
         </div>
       </div>

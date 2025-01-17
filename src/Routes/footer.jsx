@@ -29,38 +29,38 @@ function Footer() {
         <div className="contact-link">
             <h2>Follow us:</h2>
             <div className="link-con">
-            <Link data-aos="fade-up"><LuFacebook /></Link>
-            <Link data-aos="fade-down"><IoLogoWhatsapp /></Link>
-            <Link data-aos="fade-left"><LuTwitter /></Link>
-            <Link data-aos="fade-right"><LuInstagram /></Link>
+            <Link ><LuFacebook /></Link>
+            <Link ><IoLogoWhatsapp /></Link>
+            <Link ><LuTwitter /></Link>
+            <Link ><LuInstagram /></Link>
             </div>
         </div>
       </div>
         <div className="free-guarantee-support-container">
           <div className="free-container">
-          <FaCar className='car-icon' data-aos="fade-up"/>
-          <div className="text" data-aos="fade-left">
+          <FaCar className='car-icon' />
+          <div className="text" >
             <h3>Free Shipping</h3>
             <p>For all order 0ver #10,000</p>
           </div>
           </div>
           <div className="guarantee-container">
           <FaRegMoneyBillAlt className='money-icon' data-aos="fade-right" />
-          <div className="text" data-aos="fade-left">
+          <div className="text">
           <h3>Money Back Guarantee</h3>
           <p>If good have Problems</p>
           </div>
           </div>
           <div className="support-container">
-          <HiSupport className='support-icon' data-aos="fade-down" />
-          <div className="text" data-aos="fade-left">
+          <HiSupport className='support-icon'/>
+          <div className="text" >
           <h3>Online Support 24/7</h3>
           <p>Dedicated support</p>
           </div>
           </div>
           <div className="secure-container">
-          <PiContactlessPaymentFill className='payment-icon' data-aos="fade-right" />
-          <div className="text" data-aos="fade-left">
+          <PiContactlessPaymentFill className='payment-icon'/>
+          <div className="text">
           <h3>Payment Secure</h3>
           <p>100% secure payment</p>
           </div>

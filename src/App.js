@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Routes/home";
 import Login from "./Auth/login";
-import Signup from './Auth/signup'
+import Signup from './Auth/signup';
+import Profile from "./Auth/profile";
+import Accountmanagement from "./Auth/accountmanagement";
 import Product from './Routes/product';
 import Productdetail from './Routes/productdetail';
 import Trendproduct from "./Routes/trendproduct";
@@ -45,6 +47,8 @@ function App() {
           <Route path="/accessories" element={<Accessories/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/profile" element={<Profile/>}/>
+          <Route path="/accountmanagement" element={<Accountmanagement/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/cartlist" element={<Cartlist />} />
           <Route path="/shippingdetails" element={<Shippingdetails/>}/>

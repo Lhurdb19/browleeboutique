@@ -1,7 +1,7 @@
 export const trendList = [
     {
         id: 1,
-        name: 'Classic Fashion Design',
+        name: 'Classic Design',
         price: 455,
         images: [
             'https://i5.walmartimages.com/asr/49ebc2cf-c005-4254-aeb7-f44aea4edf77.a3505e2b4f42e4ae1bc1f215d926648b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF',
@@ -42,7 +42,7 @@ export const trendList = [
     },
     {
         id: 5,
-        name: 'Zip-pockets pebbled tote briefcase',
+        name: 'Zip-pockets briefcase',
         price: 654.50,
         images: [
             'https://www.aliceswonders.co.uk/cdn/shop/products/Navy_leather_double_zip_bags_300x300.jpg?v=1651786058',
@@ -85,7 +85,7 @@ export const trendList = [
 
     {
         id: 9,
-        name: 'Flap cross-body bag',
+        name: 'Cross-body bag',
         price: 670.92,
         images: [
             'https://abokika.com/cdn/shop/products/fcs1.jpg?v=1617909292',
@@ -96,7 +96,7 @@ export const trendList = [
 
     {
         id: 10,
-        name: 'Baby girl kid top wear',
+        name: 'Baby kid top wear',
         price: 370.92,
         images: [
             'https://ae.sacoorbrothers.com/cdn/shop/files/f477f1099f9914a041fdf173974495ed.jpg?v=1730135537&width=1357',
@@ -118,7 +118,7 @@ export const trendList = [
 
     {
         id: 12,
-        name: 'Generic heart shape 18K gold',
+        name: 'Heart shape 18K gold',
         price: 390.92,
         images: [
             'https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/55/5616863/1.jpg?1449',
@@ -174,7 +174,7 @@ export const trendList = [
 
     {
         id: 17,
-        name: 'Leanga kids party wear',
+        name: 'Leanga kids wear',
         price: 530.12,
         images: [
             'https://www.kidsbee.in/wp-content/uploads/2023/07/Kids-Party-Wear-Lehenga-223.jpg',
@@ -185,7 +185,7 @@ export const trendList = [
 
     {
         id: 18,
-        name: 'Plus-size ladies wear',
+        name: 'Ladies wear',
         price: 720.11,
         images: [
             'https://ae01.alicdn.com/kf/Sb173c9b873914feeae6d0bc1091b4b002.jpg?width=800&height=800&hash=1600',
@@ -196,7 +196,7 @@ export const trendList = [
 
     {
         id: 19,
-        name: 'Plain white crop-top',
+        name: 'White crop-top',
         price: 360,
         images: [
             'https://cdn.dsmcdn.com/mnresize/600/-/ty699/product/media/images/20230124/9/264345340/839004753/1/1_org_zoom.jpg',
@@ -218,7 +218,7 @@ export const trendList = [
 
     {
         id: 21,
-        name: 'Solid breathable crop-top',
+        name: 'Breathable crop-top',
         price: 567,
         images: [
             'https://m.media-amazon.com/images/I/71oeEqEwI5L._AC_UY1000_.jpg',
@@ -262,7 +262,7 @@ export const trendList = [
 
     {
         id: 25,
-        name: 'Thin high-heeled shoes',
+        name: 'High-heeled shoes',
         price: 980,
         images: [
             'https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/38/6635622/1.jpg?4410',
@@ -295,7 +295,7 @@ export const trendList = [
 
     {
         id: 28,
-        name: 'Casual blazer korean outfit',
+        name: 'Blazer korean outfit',
         price: 877,
         images: [
             'https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/61/8987922/1.jpg?4965',

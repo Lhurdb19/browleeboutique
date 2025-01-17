@@ -34,7 +34,6 @@ function Navbar({ user, handleLogout }) {
   const { cartCount } = useCartStore();
   const [userDrop, setUserDrop] = useState(false);
   const [searchProduct, setSearchProduct] = useState("");
-  // const [mobileSearch, setMobileSearch] = useState(false);
   const navigate = useNavigate();
 
   const handleMenu = () => {
@@ -45,9 +44,11 @@ function Navbar({ user, handleLogout }) {
     setUserDrop(!userDrop);
   };
 
-  // const handleMobileSearch = () => {
-  //   setMobileSearch(!mobileSearch)
-  // };
+  const handleProductClick = () => {
+    setSearchProduct("");
+  };
+
+  
 
   const NavLink = ({ isActive }) => ({
     color: isActive ? "#007bff" : "",
@@ -68,7 +69,7 @@ function Navbar({ user, handleLogout }) {
           <div className="result-card">
             {filteredProducts.length > 0 ? (
               filteredProducts.map((product) => (
-                <Link key={product.id} to={`/products/${product.id}`}>
+                <Link key={product.id} to={`/products/${product.id}`} onClick={handleProductClick}>
                   <h4>{product.name}</h4>
                 </Link>
               ))
@@ -77,9 +78,9 @@ function Navbar({ user, handleLogout }) {
             )}
             {filteredWomen.length > 0 ? (
               filteredWomen.map((women) => (
-                <Link key={women.id} to={`/womenproduct/${women.id}`}>
-                  <h4>{women.name}</h4>
-                </Link>
+                <Link key={women.id} to={`/womenproduct/${women.id}`} onClick={handleProductClick}>
+                <h4>{women.name}</h4>
+              </Link>
               ))
             ) : (
               <p>No product found with the specified name.</p>
@@ -120,7 +121,7 @@ function Navbar({ user, handleLogout }) {
                       Welcome! {user?.lastName} {user?.firstName}
                     </span>
                     <p>{user?.email}</p>
-                    <Link to="/accountsetting">ACCOUNT SETTING</Link>
+                    <Link to="/accountmanagement">ACCOUNT SETTING</Link>
                   </div>
                   <div className="wrapper">
                     <span>
@@ -145,7 +146,7 @@ function Navbar({ user, handleLogout }) {
                     </span>
                     <span>
                       <SlHome className="icon" />
-                      <Link to='/contact'>My Address</Link>
+                      <Link to='/'>My Address</Link>
                     </span>
                   </div>
                 </div>
@@ -198,7 +199,7 @@ function Navbar({ user, handleLogout }) {
               {userDrop && (
                 <div className="user-profile">
                   <div className="wrapper">
-                    <Link>
+                    <Link to='/profile'>
                       <FaRegUser style={{ fontSize: "20px" }} />
                       My Profile
                     </Link>
@@ -226,7 +227,7 @@ function Navbar({ user, handleLogout }) {
                       <FaRegAddressCard style={{ fontSize: "20px" }} />
                       Address Book
                     </Link>
-                    <Link>
+                    <Link to='/accountmanagement'>
                       <SlSettings style={{ fontSize: "20px" }} />
                       Account Management
                     </Link>

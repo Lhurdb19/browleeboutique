@@ -2,15 +2,21 @@ import React, { useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { productList } from '../Productdata/productData';
 import { useCartStore } from '../Cartstore/useCartStore'; 
-import Womenfashion from './womenfashion';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 function Product() {
   const addItemToCart = useCartStore((state) => state.addItemToCart);
   // const [searchProduct, setSearchProduct] = useState('');
   
+  const notify = () => toast.success("Product added successfully to cart!");
+  
+
   const handleAddToCart = (product) => {
     addItemToCart(product);
+    notify();
   };
 
   const filteredProducts = productList.filter((product) =>
@@ -51,10 +57,10 @@ function Product() {
               </div>
           ))}
         </div>
-        <Womenfashion/>
+        <ToastContainer  position="top-right" className="toast"/>
       </div>
     </Fragment>
   );
-}
+};
 
 export default Product;

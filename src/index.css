@@ -247,13 +247,13 @@
 }
 .men-fashion-con > .text > h2 {
   font-family: MontserratBold;
-  color: white;
+  color: #0e79eb;
   font-size: 20px;
 }
 .men-fashion-con > .text > p {
   font-family: MontserratLight;
   line-height: 1.5rem;
-  color: #fff;
+  color: #0e79eb;
 }
 .men-fashion-con > .text > a {
   color: #0e79eb;
@@ -315,13 +315,13 @@
 }
 .shoes-fashion-con > .text > h2 {
   font-family: MontserratBold;
-  color: white;
+  color: #0e79eb;
   font-size: 20px;
 }
 .shoes-fashion-con > .text > p {
   font-family: MontserratLight;
   line-height: 1.5rem;
-  color: #fff;
+  color: #0e79eb;
 }
 .shoes-fashion-con > .text > a {
   color: #0e79eb;
@@ -371,13 +371,13 @@
 }
 .kids-fashion-con > .text > h2 {
   font-family: MontserratBold;
-  color: white;
+  color: #0e79eb;
   font-size: 20px;
 }
 .kids-fashion-con > .text > p {
   font-family: MontserratLight;
   line-height: 1.5rem;
-  color: #fff;
+  color: #0e79eb;
 }
 .kids-fashion-con > .text > a {
   color: #0e79eb;
@@ -432,13 +432,13 @@
 }
 .accessories-fashion-con > .text > h2 {
   font-family: MontserratBold;
-  color: white;
+  color: #0e79eb;
   font-size: 20px;
 }
 .accessories-fashion-con > .text > p {
   font-family: MontserratLight;
   line-height: 1.5rem;
-  color: #fff;
+  color: #0e79eb;
 }
 .accessories-fashion-con > .text > a {
   color: #0e79eb;
@@ -764,11 +764,11 @@
   grid-template-columns: repeat(5, 1fr);
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 20px;
+  gap: 15px;
 }
 
 .women-list > .women-info {
-  width: 170px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -792,7 +792,8 @@
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    padding:60px 0px;
+    padding: 0px;
+    padding-top: 100px;
   }
   
   .women-list > .women-info {
@@ -1488,17 +1489,18 @@
 
 .product-mother {
   width: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transform: translateY(50px);
   gap: 0px;
+  padding: 70px 0px;
 }
 @media screen and (max-width:896px) {
   .product-mother {
     width: 100%;
-    padding: 10px;
+    padding: 60px 10px;
     gap: 20px;
   }
 }
@@ -1510,11 +1512,11 @@
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  padding: 70px 50px 0px 70px;
+  padding: 70px;
 }
 
 .product-list > .product-info {
-  width: 160px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1602,7 +1604,7 @@
   width: 100%;
   display: flex;
   display: none;
-  padding: 0 10px;
+  padding: 5px;
 }
 
 .product-text:hover > .btn {
@@ -1615,7 +1617,7 @@
   padding: 5px;
   border-radius: 5px;
   border: none;
-  background-color: #6496cd;
+  background-color: #0f2b49;
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
@@ -1656,7 +1658,7 @@
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: #6496cd;
+    background-color: #0f2b49;
     color: white;
     cursor: pointer;
     margin-bottom: 10px;
@@ -2649,6 +2651,17 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.manager-1 > .wrapper > span > p {
+  font-size: 13px;
+  font-family: MontserratBold;
+  color: #353333;
+}
+.manager-1 > .wrapper > span > h3 {
+  font-family: MontserratLight;
+  font-size: 16px;
+}
+
 @media screen and (max-width:896px) {
   .manager-1 > .wrapper > img {
     width: 100%;
@@ -2664,14 +2677,16 @@
     flex-direction: column;
     gap: 10px;
   }
-}
-
+  
 .manager-1 > .wrapper > span > p {
+  font-size: 10px;
   font-family: MontserratBold;
+  color: #353333;
 }
 .manager-1 > .wrapper > span > h3 {
   font-family: MontserratLight;
   font-size: 16px;
+}
 }
 
 
@@ -3059,11 +3074,22 @@ form > .input-con {
   justify-content: center;
   align-items: center;
   border: none;
-  border-radius: 5px;
-  background-color: #0f2b49;
-  color: white;
+  border-radius: 20px;
+  border: 1px solid #0f2b49;
+  color: #0f2b49;
   font-size: 20px;
+  background-color: transparent;
 }
+.shipping-container > form > button:disabled {
+  border: none;
+  color: #545353;
+}
+.shipping-container > form > button:hover {
+  border: none;
+  color: #fff;
+  background-color: #0f2b49;
+}
+
 
 /* ORDER DETAILS CSS */
 
@@ -3078,7 +3104,16 @@ form > .input-con {
   color: #545353;
 }
 @media screen and (max-width:896px) {
-    
+  .cart-payment-wrapper {
+    width: 280px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #e8e7e7;
+    gap: 5px;
+    border-radius: 5px;
+    color: #545353;
+  }
 }
 
 .cart-list-payment {
@@ -3141,7 +3176,7 @@ form > .input-con {
 
 .cart-check-payment > .cart-payment-con > .cart-payment-span-2 > h3 {
   font-family: MontserratBold;
-  font-size: 14px;
+  font-size: 11px;
 }
 .cart-check-payment > .cart-payment-con > .cart-payment-span-2 > p {
   font-family: MontserratLight;
@@ -3208,12 +3243,12 @@ form > .input-con {
   font-family: MontserratLight;
 }
 .link-2 > .link-shop {
-  color: #0e79eb;
+  color: #0f2b49;
   font-size: 12px;
   cursor: pointer;
 }
 .link-2 > .link-ship {
-  color: #0e79eb;
+  color: #0f2b49;
   font-size: 12px;
   cursor: pointer;
 }
@@ -3241,12 +3276,10 @@ form > .input-con {
     font-family: MontserratLight;
   }
   .link-2 > .link-shop {
-    color: #0e79eb;
     font-size: 10px;
     cursor: pointer;
   }
   .link-2 > .link-ship {
-    color: #0e79eb;
     font-size: 10px;
     cursor: pointer;
   }
@@ -3287,7 +3320,7 @@ form > .input-con {
   top: 70px;
   left: 0%;
   padding: 200px 0px;
-  background-color: rgba(214, 16, 16, 0.5);
+  background-color: rgba(219, 216, 216, 0.7);
   position: fixed;
   z-index: 102;
 }
@@ -3361,7 +3394,7 @@ form > .input-con {
 }
 
 .payment-methods > button:hover {
-  color: #0e79eb;
+  color: #0f2b49;
 }
 .shipping-form {
   width: 100%;
@@ -3378,13 +3411,13 @@ form > .input-con {
   align-items: flex-start;
   flex-direction: column;
   gap: 10px;
+  font-family: MontserratLight;
+  font-size: 13px;
 }
 
 .order-detail {
   width: 100%;
 }
-
-
 
 
 /* EMPTY BAG CSS */
@@ -3428,15 +3461,16 @@ form > .input-con {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0f2b49;
   border-radius: 20px;
   padding: 10px;
+  background-color: #0f2b49;
   color: #fff;
   font-family: MontserratLight;
 }
 
 .empty-bag > a:hover {
-  color: #ff4500;
+  color: #fff;
+  background-color: #ff4500;
 }
 
 @media screen and (max-width:896px) {
@@ -3467,7 +3501,7 @@ form > .input-con {
   border-radius: 5px;
   gap: 10px;
   padding: 10px;
-  background-color: rgba(127, 124, 124, 0.5);
+  background-color: rgba(219, 216, 216, 0.7);
 }
 
 .authentication-container > form > span {
@@ -3516,7 +3550,7 @@ form > span > .show-pass > input {
   align-items: center;
   padding: 5px;
   border-radius: 10px;
-  background-color: #6496cd;
+  background-color: #0f2b49;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -3531,7 +3565,7 @@ form > .navigate {
 }
 
 .navigate > span {
-  color: #0e79eb;
+  color: #0f2b49;
   cursor: pointer;
 }
 
@@ -3576,9 +3610,157 @@ form > .navigate {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-  }
-  
+  } 
 }
+
+.profile-component {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px 70px;
+}
+
+.profile-container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+
+.profile-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.profile-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.profile-btn {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.profile-button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.edit-profile {
+  width: 100%;
+}
+
+.profile-button button {
+  width:100%;
+  height: 35px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.profile-button button:hover {
+  height: 35px;
+  background-color: #0f2b49;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #0f2b49;
+  font-size: 13px;
+}
+
+
+/* ACCOUNT MANAGEMENT  */
+.account-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding:100px 70px;
+  gap: 10px;
+  font-family: MontserratLight;
+}
+
+.account-container > form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background-color: #dedddd;
+}
+
+.change-email {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3px;
+  font-family: MontserratLight;
+}
+.change-email > input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.change-newpass {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3px;
+  font-family: MontserratLight;
+}
+.change-newpass > input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.account-container > form > button {
+  width: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #0f2b49;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-family: MontserratLight;
+}
+
 
 /* CONTACT CONTAINER  */
 .contact-container {
@@ -4114,14 +4296,15 @@ footer > a:hover {
   .notfound-container {
     width: 100%;
     min-height: 100vh;
-    padding: 110px 0 50px 0px;
+    padding: 110px 0px 50px 10px;
   }
   
   .notfound-container > .text {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    margin-left: -10px;
+    gap: 0px;
   }
   
   .notfound-container > .text > a {

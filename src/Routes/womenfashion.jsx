@@ -2,12 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { womenProductList } from '../Productdata/womenProduct';
 import { useCartStore } from '../Cartstore/useCartStore';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 function Womenfashion() {
   const addItemToCart = useCartStore((state) => state.addItemToCart);
 
+  const notify = () => toast.success("Product added successfully to cart!");
+    
+
   const handleAddToCart = (women) => {
     addItemToCart(women);
+    notify();
   };
 
   const filteredProducts = womenProductList.filter((women) =>
@@ -45,6 +52,7 @@ function Womenfashion() {
           </div>
         ))}
       </div>
+      <ToastContainer  position="top-right" className="toast"/>
     </div>
     </>
   )
