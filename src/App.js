@@ -1,30 +1,31 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Routes/home";
+import Home from './Routes/Home/home';
 import Login from "./Auth/login";
 import Signup from './Auth/signup';
 import Profile from "./Auth/profile";
 import Accountmanagement from "./Auth/accountmanagement";
-import Product from './Routes/product';
-import Productdetail from './Routes/productdetail';
-import Trendproduct from "./Routes/trendproduct";
+import Product from './Routes/Products/product';
+import Productdetail from './Routes/Products/productdetail';
+import Trendproduct from "./Routes/Trend/trendproduct";
 import Cartlist from './cartListView/cartlist';
-import Shippingdetails from "./Routes/shippingdetails";
-import Orderdetails from "./Routes/orderdetails";
-import Paymentdetails from "./Routes/paymentdetails";
-import Womenfashion from "./Routes/womenfashion";
-import Womendetails from "./Routes/womendetails";
-import Menfashion from "./Routes/menfashion";
-import Kidsfashion from "./Routes/kidsfashion";
-import Shoesfashion from "./Routes/shoesfashion";
+import Shippingdetails from './Routes/Shippingdetail/shippingdetails';
+import Orderdetails from "./Routes/Order/orderdetails";
+import Paymentdetails from './Routes/Payment/paymentdetails';
+import Womenfashion from './Routes/Women/womenfashion';
+import Womendetails from './Routes/Women/womendetails';
+import Womenslider from './Routes/Slider/womenslider';
+import Menfashion from './Routes/Men/menfashion';
+import Kidsfashion from './Routes/Kids/kidsfashion';
+import Shoesfashion from './Routes/Shoes/shoesfashion';
 import Accessories from "./Routes/accessories";
-import Emptycart from "./Routes/emptycart";
+import Emptycart from './Routes/Emptycart/emptycart';
 import Navbar from './Navigation/navbar';
-import Blog from "./Routes/blog";
-import Footer from "./Routes/footer";
+import Blog from './Routes/Blog/blog';
+import Footer from './Routes/Footer/footer';
 import Notfound from "./Routes/notfound";
 import  {useAuthStore}   from './Lib/store';
-import Contact from "./Routes/contact";
+import Contact from './Routes/Contact/contact';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
           <Route path="blog" element={<Blog/>}/>
           <Route path="/womenfashion" element={<Womenfashion/>}/>
           <Route path="/menfashion" element={<Menfashion/>}/>
+          <Route path="womenslider" element={<Womenslider/>}/>
           <Route path="/shoesfashion" element={<Shoesfashion/>}/>
           <Route path="/kidsfashion" element={<Kidsfashion/>}/>
           <Route path="/accessories" element={<Accessories/>}/>

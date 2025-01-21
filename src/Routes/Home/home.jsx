@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Responsive from './Slider/womenslider';
-import VerticalMode from './Slider/collection';
+import Responsive from '../Slider/womenslider';
+import VerticalMode from '../Slider/collection'
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Trendproduct from './trendproduct';
+import Trendproduct from '../Trend/trendproduct';
+import './Home.css';
 
 function Home() {
   useEffect(()=> {

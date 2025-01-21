@@ -10,6 +10,7 @@ import { HiSupport } from "react-icons/hi";
 import { PiContactlessPaymentFill } from "react-icons/pi";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import './Footer.css';
 
 function Footer() {
   useEffect(()=> {

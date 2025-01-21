@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useCartStore } from '../Cartstore/useCartStore';
-import { trendList } from '../Productdata/trendData';
+import { useCartStore } from '../../Cartstore/useCartStore';
+import { trendList } from '../../Productdata/trendData';
 import { TiStar } from "react-icons/ti";
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import './Trendproduct.css';
 
 
 function Trendproduct() {

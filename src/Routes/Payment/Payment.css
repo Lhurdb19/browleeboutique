@@ -1,0 +1,240 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: MontserratLight;
+    src: url(/src/Assets/Montserrat-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratBold;
+    src: url(/src/Assets/Montserrat-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Bebas;
+    src: url(/src/Assets/BebasNeue-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratItalic ;
+    src: url(/src/Assets/Montserrat-Italic.ttf);
+  }
+  
+
+  /* PAYMENT METHODS CSS */
+
+.payment-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 100px 70px;
+    background-color: #fcfbfb;
+  }
+  
+  @media screen and (max-width:896px) {
+    .payment-container {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      gap: 20px;
+      padding: 120px 10px;
+      background-color: #fcfbfb;
+    }
+  }
+  
+  .link-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateY(90px);
+    padding-left: 70px;
+    font-family: MontserratLight;
+  }
+  .link-2 > .link-shop {
+    color: #6496cd;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .link-2 > .link-ship {
+    color: #6496cd;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .link-2 > .link-pay {
+    color: #545353;
+    font-size: 12px;
+    font-weight: 800;
+    cursor:text;
+  }
+  
+  .link-2 > .link-shop:hover {
+    color: orangered;
+  }
+  .link-2 > .link-ship:hover {
+    color: orangered;
+  }
+  
+  @media screen and (max-width:896px) {
+    .link-2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      transform: translateY(110px);
+      padding-left: 10px;
+      font-family: MontserratLight;
+    }
+    .link-2 > .link-shop {
+      font-size: 10px;
+      cursor: pointer;
+    }
+    .link-2 > .link-ship {
+      font-size: 10px;
+      cursor: pointer;
+    }
+    .link-2 > .link-pay {
+      color: #545353;
+      font-size: 10px;
+      font-weight: 800;
+      cursor:text;
+    }
+  }
+  
+  .payment-details {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media screen and (max-width:896px) {
+    .payment-details {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  .payment-overlay-con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    top: 70px;
+    left: 0%;
+    padding: 200px 0px;
+    background-color: rgba(219, 216, 216, 0.7);
+    position: fixed;
+    z-index: 102;
+  }
+  .payment-overlay {
+    width: 250px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  @media screen and (max-width:896px) {
+    .payment-overlay-con {
+      width: 100%;
+      top: 50px;
+    }
+  }
+  
+  .choose-payment-method {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0px;
+    background-color: #f0ecec;
+  }
+  @media screen and (max-width:896px) {
+    .choose-payment-method {
+      width: 100%;
+      display: flex;
+    }
+  }
+  .choose-payment-method > h3 {
+    font-size: 20px;
+    font-family: Bebas;
+    color: #545353;
+  }
+  
+  .payment-methods {
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #dbd6d6;
+  } 
+  @media screen and (max-width:896px) {
+    .payment-methods {
+      width: 300px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      background-color: #dbd6d6;
+    } 
+  }
+  
+  .payment-methods > button {
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    font-family: MontserratLight;
+    color: #353333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .payment-methods > button:hover {
+    color: #6496cd;
+  }
+  .shipping-form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .shipping-form > .form-detail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    font-family: MontserratLight;
+    font-size: 13px;
+  }
+  
+  .order-detail {
+    width: 100%;
+  }
+  
+  

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import useShippingDetails from "../Cartstore/useShippingDetails"; // Import the Zustand store
+import useShippingDetails from "../../Cartstore/useShippingDetails";
 import { useNavigate } from "react-router-dom";
-import Orderdetails from "./orderdetails";
-import { useCartStore } from "../Cartstore/useCartStore";
+import Orderdetails from '../Order/orderdetails';
+import { useCartStore } from "../../Cartstore/useCartStore";
+import './Shippingdetail.css';
 
 const Shippingdetails = () => {
   const [isFormCompleted, setIsFormCompleted] = useState(false);

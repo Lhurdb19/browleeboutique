@@ -1,9 +1,10 @@
 import React, { useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { productList } from '../Productdata/productData';
-import { useCartStore } from '../Cartstore/useCartStore'; 
+import { productList } from '../../Productdata/productData';
+import { useCartStore } from '../../Cartstore/useCartStore';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import './Product.css';
 
 
 

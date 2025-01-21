@@ -2,6 +2,7 @@ import React from 'react';
 import { IoLocationSharp } from "react-icons/io5";
 import { IoIosCall } from "react-icons/io";
 import { BiSupport } from "react-icons/bi";
+import './Contact.css';
 
 function Contact() {
   return (

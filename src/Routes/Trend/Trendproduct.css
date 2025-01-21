@@ -1,0 +1,229 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: MontserratLight;
+    src: url(/src/Assets/Montserrat-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratBold;
+    src: url(/src/Assets/Montserrat-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Bebas;
+    src: url(/src/Assets/BebasNeue-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratItalic ;
+    src: url(/src/Assets/Montserrat-Italic.ttf);
+  }
+  
+
+  /* TREND PRODUCT  */
+
+.trend-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .trend-container > h3 {
+    font-size: 30px;
+    font-family: Bebas;
+    border-bottom: 2px solid #ff4500;
+  }
+  @media screen and (max-width:896px) {
+    .trend-container {
+      width: 100%;
+    }
+  }
+  
+  .trend-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  @media screen and (max-width:896px) {
+     .trend-list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+     }
+  }
+  
+  .trend-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f2f0f0;
+  }
+  @media screen and (max-width:896px) {
+    .trend-info {
+      width: 100%;
+      gap: 5px;
+    }
+  }
+  
+  .trend-info > .trend-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .trend-image > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .trend-info > .trend-text {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    padding:0 0 5px 5px;
+    font-size: 12px;
+    background-color: #f2f0f0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .trend-text > h3 {
+    font-family: MontserratBold;
+    font-size: 11px;
+  }
+  .trend-text > .stars-icon {
+    color: #F66947;
+  }
+  .trend-text > h4 {
+    font-family: MontserratLight;
+    font-size: 11px;
+  }
+  .trend-text > p {
+    font-family: MontserratLight;
+    font-size: 12px;
+  }
+  
+  .trend-text > .btn {
+    width: 100%;
+    display: flex;
+    display: none;
+    padding-right: 5px;
+  }
+  
+  .trend-text:hover > .btn {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .trend-text > .btn > button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6496cd;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .trend-text > .btn > button:disabled {
+    background-color: #b6b4b4;
+    cursor: not-allowed;
+  }
+  
+  @media screen and (max-width:896px) {
+    .trend-info > .trend-image {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      overflow: hidden;
+    }
+    
+    .trend-image > img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      position: relative;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    .trend-info > .trend-text {
+      width: 100%;
+      height: 110px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .trend-text > h3 {
+      font-family: MontserratLight;
+      font-size: 9px;
+    }
+    .trend-text > h4 {
+      font-family: MontserratLight;
+      font-size: 10px;
+    }
+    .trend-text > p {
+      font-family: MontserratLight;
+      font-size: 11px;
+    }
+  
+    .trend-text > .btn {
+      width: 100%;
+      display: flex;
+      display: block;
+      padding:0 5px 5px 0;
+    }
+  
+    .trend-text > .btn > button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #6496cd;
+      color: white;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  }
+  .trend-container > button {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #6496cd;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .trend-container > button:disabled{
+    background-color: #545353;
+    cursor: not-allowed;
+  }
+  
+  

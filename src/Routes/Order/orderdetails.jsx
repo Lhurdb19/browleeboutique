@@ -1,6 +1,6 @@
 import React, {Fragment, useEffect} from 'react';
-import { useCartStore} from '../Cartstore/useCartStore'
-// import "./Orderpayment.css"
+import { useCartStore } from '../../Cartstore/useCartStore';
+import './Orderdetails.css';
 
 function Orderdetails() {
     const { cartItems, totalCart } = useCartStore();

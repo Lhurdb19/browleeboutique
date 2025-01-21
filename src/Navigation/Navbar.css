@@ -14,7 +14,8 @@
     position: fixed;
     z-index: 99;
     padding: 10px 70px 10px 70px;
-    background-color: #0f2b49;
+    background-color: #fff;
+    border-bottom: 1px solid #6496cd;
 }
 
 @media screen and (max-width:896px) {
@@ -61,7 +62,7 @@
         outline: none;
         padding: 10px;
         border-radius: 25px;
-        border: 1px dotted #000;
+        border: 1px solid #6496cd;
         background-color: transparent;
       }
   }
@@ -76,14 +77,14 @@
 
 
 .nav-combine > a {
-    font-family: Bebas;
-    font-size: 35px;
-    color: white;
+    font-family: MontserratBold;
+    font-size: 30px;
+    color: #6496cd;
 }
 
 .nav-combine > .menu-bar {
     display: none;
-    color: white;
+    color: #6496cd;
 }
 
 @media screen and (max-width:896px) {
@@ -110,7 +111,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    color: white;
+    color: #6496cd;
 }
 
 @media screen and (max-width:896px) {
@@ -128,7 +129,7 @@
         position: fixed;
         z-index: 100;
         transform: translateX(-100%);
-        background-color: #080404;
+        background-color: #6496cd;
         transition: all 0.3s ease-in-out;
     }
 
@@ -236,13 +237,13 @@
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    font-family: MontserratBold;
+    font-family: MontserratLight;
     font-size: 15px;
     transform: translateX(20px);
 }
 
 .combination > a {
-    color: white;
+    color: #6496cd;
 }
 
 @media screen and (max-width:896px) {
@@ -273,17 +274,17 @@
 
 .auth > .sign-up {
     width: 58px;
-    color: white;
-    border-right: 0.2px solid #fff;
-    border-top: 0.5px solid #fff;
-    border-bottom: 0.5px solid #fff;
+    color: #6496cd;
+    border-right: 0.2px solid #6496cd;
+    border-top: 0.5px solid #6496cd;
+    border-bottom: 0.5px solid #6496cd;
     padding: 5px;
     font-size: 12px;
     border-top-right-radius: 10px;
 }
 
 .auth > .login {
-    background-color: #ff4500;
+    background-color: #6496cd;
     padding: 5px;
     font-size: 13px;
     border-bottom-left-radius: 10px;
@@ -339,7 +340,7 @@
     gap: 10px;
     top: 45px;
     padding: 10px;
-    background-color: #0f2b49;
+    background-color: #6496cd;
     position: absolute;
 }
 
@@ -431,9 +432,9 @@
         outline: none;
         padding: 10px;
         border-radius: 25px;
-        border: 1px solid #fff;
+        border: 1px solid #6496cd;
         background-color: transparent;
-        color: #fff;
+        color: #6496cd;
   }
 
 @media screen and (max-width:896px) {
@@ -474,7 +475,7 @@
 .product-cart {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #6496cd;
     cursor: pointer;
     position: relative;
 }
@@ -486,7 +487,7 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    color: #fff;
+    color: #6496cd;
 }
 
 @media screen and (max-width:896px) {

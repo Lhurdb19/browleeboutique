@@ -1,0 +1,145 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: MontserratLight;
+    src: url(/src/Assets/Montserrat-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratBold;
+    src: url(/src/Assets/Montserrat-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Bebas;
+    src: url(/src/Assets/BebasNeue-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratItalic ;
+    src: url(/src/Assets/Montserrat-Italic.ttf);
+  }
+  
+
+  /* ORDER DETAILS CSS */
+
+.cart-payment-wrapper {
+    width: 280px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #e8e7e7;
+    gap: 5px;
+    border-radius: 5px;
+    color: #545353;
+  }
+  @media screen and (max-width:896px) {
+    .cart-payment-wrapper {
+      width: 280px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      background-color: #e8e7e7;
+      gap: 5px;
+      border-radius: 5px;
+      color: #545353;
+    }
+  }
+  
+  .cart-list-payment {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .cart-card-payment {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cart-check-payment {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid gray;
+  }
+  
+  .cart-check-payment > .cart-payment-con {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  
+  .cart-check-payment > .cart-payment-con > .cart-payment-span-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .cart-check-payment > .cart-payment-con > .cart-payment-span-1 > img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  .cart-check-payment > .cart-payment-con > .cart-payment-span-2 {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 5px;
+  }
+  
+  .cart-check-payment > .cart-payment-con > .cart-payment-span-2 > h3 {
+    font-family: MontserratBold;
+    font-size: 11px;
+  }
+  .cart-check-payment > .cart-payment-con > .cart-payment-span-2 > p {
+    font-family: MontserratLight;
+  }
+  
+  .cart-payment-sumarry {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+  }
+  
+  .cart-payment-sumarry > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .cart-payment-sumarry > span > p {
+    font-family: Bebas;
+    font-size: 20px;
+  }
+  .cart-payment-sumarry > span > h3 {
+    font-family: Bebas;
+    font-size: 17px;
+  }
+  

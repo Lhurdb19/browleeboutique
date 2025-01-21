@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { womenProductList } from "../Productdata/womenProduct";
-import { useCartStore } from "../Cartstore/useCartStore";
+import { womenProductList } from "../../Productdata/womenProduct";
+import { useCartStore } from "../../Cartstore/useCartStore";
 import { FaHands } from "react-icons/fa";
 import { FaTruckPickup } from "react-icons/fa";
 import { BsArrowCounterclockwise } from "react-icons/bs";
 import { MdOutlineKeyboardArrowUp, MdOutlineKeyboardArrowDown, MdClose, MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import './Womenfashion.css';
 
 function Womendetails() {
   const { womenId } = useParams();

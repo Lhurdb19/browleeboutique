@@ -1,0 +1,308 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: MontserratLight;
+    src: url(/src/Assets/Montserrat-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratBold;
+    src: url(/src/Assets/Montserrat-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Bebas;
+    src: url(/src/Assets/BebasNeue-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratItalic ;
+    src: url(/src/Assets/Montserrat-Italic.ttf);
+  }
+
+  
+  /* FOOTER CONTAINER  */
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #6496cd;
+  }
+  
+  .footer-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+  }
+  
+  .footer-card > a {
+    font-family: Bebas;
+      font-size: 40px;
+      color: white;
+  }
+  
+  .footer-card > .contact-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-family: MontserratLight;
+  }
+  .contact-card > a {
+    color: #fff;
+  }
+  .footer-card > .contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    font-family: MontserratLight;
+  }
+  
+  .contact-link > h2 {
+    color: #fff;
+  }
+  .contact-link > .link-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact-link > .link-con > a {
+    color: white;
+  }
+  .contact-link > .link-con > a:hover {
+    color: #ff4500;
+  }
+  
+  .free-guarantee-support-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 70px;
+    gap: 30px;
+  }
+  .free-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+  .car-icon {
+    font-size: 35px;
+    color: #ff4500;
+  }
+  .free-container > .text {
+    font-size: 12px;
+    color: white;
+    font-family: MontserratLight;
+  }
+  
+  .guarantee-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+  .money-icon {
+    font-size: 35px;
+    color: #ff4500;
+  }
+  .guarantee-container > .text {
+    font-size: 12px;
+    color: white;
+    font-family: MontserratLight;
+  }
+  
+  .support-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+  .support-icon {
+    font-size: 35px;
+    color: #ff4500;
+  }
+  .support-container > .text {
+    font-size: 12px;
+    color: white;
+    font-family: MontserratLight;
+  }
+  
+  .secure-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+  .payment-icon {
+    font-size: 35px;
+    color: #ff4500;
+  }
+  .secure-container > .text {
+    font-size: 12px;
+    color: white;
+    font-family: MontserratLight;
+  }
+  
+  .footer-container > footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #d0cccc;
+    padding: 20px;
+    font-size: 14px;
+    font-family: MontserratLight;
+    color: #353333;
+  }
+  
+  footer > a {
+    color: #0f2b49;
+  }
+  footer > a:hover {
+    color: #ff4500;
+  }
+  
+  @media screen and (max-width:896px) {
+    .footer-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .footer-card {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 10px;
+      gap: 20px;
+    }
+  
+    .footer-card > .contact-card {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      font-family: MontserratLight;
+    }
+    .footer-card > .contact-link {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      font-family: MontserratLight;
+    }
+    
+    .contact-link > h2 {
+      color: #fff;
+    }
+    .contact-link > .link-con {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
+    .free-guarantee-support-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px 10px;
+      gap: 30px;
+    }
+    .free-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+    }
+    .car-icon {
+      font-size: 35px;
+      color: #ff4500;
+    }
+    .free-container > .text {
+      font-size: 12px;
+      color: white;
+      font-family: MontserratLight;
+    }
+    
+    .guarantee-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+    }
+    .money-icon {
+      font-size: 35px;
+      color: #ff4500;
+    }
+    .guarantee-container > .text {
+      font-size: 12px;
+      color: white;
+      font-family: MontserratLight;
+    }
+    
+    .support-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+    }
+    .support-icon {
+      font-size: 35px;
+      color: #ff4500;
+    }
+    .support-container > .text {
+      font-size: 12px;
+      color: white;
+      font-family: MontserratLight;
+    }
+    
+    .secure-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+    }
+    .payment-icon {
+      font-size: 35px;
+      color: #ff4500;
+    }
+    .secure-container > .text {
+      font-size: 12px;
+      color: white;
+      font-family: MontserratLight;
+    }
+    
+  }
+  

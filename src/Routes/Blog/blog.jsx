@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Blogdate from "../Routes/blogdate";
+import Blogdate from '../Blog/blogdate';
+import './Blog.css';
 
 function Blog() {
   return (

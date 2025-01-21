@@ -1,0 +1,524 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: MontserratLight;
+    src: url(/src/Assets/Montserrat-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratBold;
+    src: url(/src/Assets/Montserrat-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Bebas;
+    src: url(/src/Assets/BebasNeue-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratItalic ;
+    src: url(/src/Assets/Montserrat-Italic.ttf);
+  }
+  
+
+
+
+/* CART CSS */
+.removal-overlay {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(170, 169, 169, 0.514);
+    position: fixed;
+    z-index: 101;
+  }
+  
+  .removing-card {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding:10px;
+    gap: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width:896px) {
+    .removal-overlay {
+      width: 100%;
+      min-height: 100%;
+      display: flex;
+      padding: 10px;
+    }
+    
+    .removing-card {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      padding:10px;
+      gap: 5px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+  }
+  
+  .removing-card > .icons {
+    font-size: 30px;
+    color: orangered;
+  }
+  .removing-card > h3 {
+    font-size: 20px;
+    color: orangered;
+  }
+  
+  .removing-card > p {
+    font-family: MontserratLight;
+  }
+  
+  .removing-card > .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .removing-card > .btn > button:nth-child(1) {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .removing-card > .btn > button:nth-child(2) {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6496cd;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .removing-card > .btn > button:hover {
+    background-color: orangered;
+    color: black;
+  }
+  
+  @media screen and (max-width:896px) {
+    .removing-card > .btn > button:nth-child(1) {
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #6496cd;
+      color: white;
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .removing-card > .btn > button:nth-child(2) {
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: orangered;
+      color: white;
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  
+  .cart-list-view {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    padding: 70px;
+    background-color: #f0ecec;
+  }
+  
+  .cart-list-view > span {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    font-size: 13px;
+    font-family: MontserratBold;
+    border-bottom: 1px solid gray;
+    color: #353333;
+  }
+  
+  @media screen and (max-width:896px) {
+    .cart-list-view {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      padding:100px 10px;
+      background-color: #f0ecec;
+    }
+    
+    .cart-list-view > span {
+      width: 100%;
+      display: flex;
+    }
+  }
+  
+  
+  .cart-management {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+  }
+  
+  .cart-management > .con {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid gray;
+  }
+  
+  @media screen and (max-width:896px) {
+    .cart-management {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    
+    .cart-management > .con {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+  
+  .con > .manager-1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .manager-1 > .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+  }
+  @media screen and (max-width:896px) {
+    .con > .manager-1 {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0px;
+    }
+    
+    .manager-1 > .wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  
+  .manager-1 > .wrapper > img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .manager-1 > .wrapper > span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .manager-1 > .wrapper > span > p {
+    font-size: 13px;
+    font-family: MontserratBold;
+    color: #353333;
+  }
+  .manager-1 > .wrapper > span > h3 {
+    font-family: MontserratLight;
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width:896px) {
+    .manager-1 > .wrapper > img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+    .manager-1 > .wrapper > span {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+  .manager-1 > .wrapper > span > p {
+    font-size: 10px;
+    font-family: MontserratBold;
+    color: #353333;
+  }
+  .manager-1 > .wrapper > span > h3 {
+    font-family: MontserratLight;
+    font-size: 16px;
+  }
+  }
+  
+  
+  .con > .manager-2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .manager-2 > span {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  @media screen and (max-width:896px) {
+    .con > .manager-2 {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 20px;
+      transform: translateY(120px);
+    }
+    
+    .manager-2 > span {
+      width: 100px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0px;
+    }
+  }
+  
+  .manager-2 > span > .btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .manager-2 > span > .btn > p {
+    font-family: MontserratBold;
+    font-size: 20px;
+  }
+  
+  .manager-2 > span > .btn > button:nth-child(1) {
+      width: 25px;
+      padding: 3px;
+      border-radius: 4px;
+      font-size: 17px;
+      border: none;
+      background-color: #353333;
+      color: white;
+    }
+    .manager-2 > span > .btn > button {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      border-radius: 4px;
+      border: none;
+      background-color: #353333;
+      color: white;
+      cursor: pointer;
+  }
+  
+  .manager-2 > button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6496cd;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  @media screen and (max-width:896px) {
+    .manager-2 > span > .btn {
+      width: 100px;
+      display: flex;
+      gap: 5px;
+      justify-content: flex-start;
+      align-items: flex-start;
+  
+    }
+    .manager-2 > span > .btn > p {
+      font-family: Bebas;
+      font-size: 18px;
+    }
+  
+    .manager-2 > span > .btn > button:nth-child(1) {
+      width: 25px;
+      padding: 3px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+  
+    .manager-2 > span > .btn > button {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      border-radius: 4px;
+  }
+  
+  .manager-2 > button {
+    width: 25px;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  }
+  
+  .cart-management > button {
+    width: 100px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border: none;
+    background-color: #6496cd;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: MontserratBold;
+  }
+  
+  .order-summary {
+    width: 270px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fcfbfb;
+    border-radius: 5px;
+  }
+  
+  .order-summary > h3 {
+    width: 100%;
+    font-family: Bebas;
+    font-size: 20px;
+    color: #545353;
+    border-bottom: 1px solid gray;
+  }
+  
+  .order-summary-card {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .order-summary-card > span {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 110px; */
+    border-bottom: 1px solid gray;
+  }
+  
+  .order-summary-card > span > h3 {
+    display: flex;
+    font-family: MontserratLight;
+    font-size: 15px;
+  }
+  .order-summary-card > span > p {
+    display: flex;
+    transform: translateX(120px);
+    font-family: Bebas;
+  }
+  
+  .order-summary-card > p {
+    width: 100%;
+    font-family: MontserratLight;
+    font-size: 11px;
+    border-bottom: 1px solid gray;
+  }
+  
+  .order-summary-card > button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-family: MontserratLight;
+    background-color: #6496cd;
+    cursor: pointer;
+  }
+  

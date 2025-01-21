@@ -1,0 +1,277 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: MontserratLight;
+    src: url(/src/Assets/Montserrat-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratBold;
+    src: url(/src/Assets/Montserrat-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Bebas;
+    src: url(/src/Assets/BebasNeue-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratItalic ;
+    src: url(/src/Assets/Montserrat-Italic.ttf);
+  }
+  
+
+  
+/* MENFASHION  */
+.men-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 70px;
+  }
+  @media screen and (max-width:896px) {
+      .men-container {
+        width: 100%;
+        padding: 120px 10px;
+      }
+  }
+  
+  .hot-best-feature-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  @media screen and (max-width:896px) {
+    .hot-best-feature-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  
+  .hot-trend-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hot-trend-container > h3 {
+    font-size: 25px;
+    border-bottom: 2px solid #ff4500;
+    font-family: Bebas;
+  }
+  @media screen and (max-width:896px) {
+    .hot-trend-container > h3 {
+      font-size: 30px;
+      border-bottom: 2px solid #ff4500;
+      font-family: Bebas;
+    }
+  }
+  
+  .best-seller-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .best-seller-container > h3 {
+    font-size: 25px;
+    border-bottom: 2px solid #ff4500;
+    font-family: Bebas;
+  }
+  @media screen and (max-width:896px) {
+    .best-seller-container > h3 {
+      font-size: 30px;
+      border-bottom: 2px solid #ff4500;
+      font-family: Bebas;
+    }
+  }
+  
+  .feature-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .feature-container > h3 {
+    font-size: 25px;
+    border-bottom: 2px solid #ff4500;
+    font-family: Bebas;
+  }
+  @media screen and (max-width:896px) {
+    .feature-container > h3 {
+      font-size: 30px;
+      border-bottom: 2px solid #ff4500;
+      font-family: Bebas;
+    }
+  }
+  
+  
+  .box-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .box-container > .box-1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #dad4d456;
+    transition: all 0.3s ease-in-out;
+  }
+  .box-1:hover {
+    box-shadow: 1px 1px 0px 1px #e3e2e2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box-1 > img {
+    width: 140px;
+    height: 130px;
+    object-fit: cover;
+  }
+  .box-1 > .text {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  
+  .box-1 > .text > p {
+    font-family: MontserratLight;
+    font-size: 14px;
+  }
+  .box-1 > .text > h4 {
+    font-family: MontserratBold;
+    font-size: 14px;
+  }
+  @media screen and (max-width:896px) {
+    .box-1 > .text > p {
+      font-family: MontserratLight;
+      font-size: 13px;
+    }
+    .box-1 > .text > h4 {
+      font-family: MontserratBold;
+      font-size: 13px;
+    }
+  }
+  
+  .box-container > .box-2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #dad4d456;
+    transition: all 0.3s ease-in-out;
+  }
+  .box-2:hover {
+    box-shadow: 1px 1px 0px 1px #e3e2e2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box-2 > img {
+    width: 140px;
+    height: 130px;
+    object-fit: cover;
+  }
+  .box-2 > .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .box-2 > .text > p {
+    font-family: MontserratLight;
+    font-size: 14px;
+  }
+  .box-2 > .text > h4 {
+    font-family: MontserratBold;
+    font-size: 14px;
+  }
+  @media screen and (max-width:896px) {
+    .box-2 > .text > p {
+      font-family: MontserratLight;
+      font-size: 13px;
+    }
+    .box-2 > .text > h4 {
+      font-family: MontserratBold;
+      font-size: 13px;
+    }
+  }
+  
+  .box-container > .box-3 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #dad4d456;
+    transition: all 0.3s ease-in-out;
+  }
+  .box-3:hover {
+    box-shadow: 1px 1px 0px 1px #e3e2e2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box-3 > img {
+    width: 140px;
+    height: 130px;
+    object-fit: cover;
+  }
+  .box-3 > .text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .box-3 > .text > p {
+    font-family: MontserratLight;
+    font-size: 14px;
+  }
+  .box-3 > .text > h4 {
+    font-family: MontserratBold;
+    font-size: 14px;
+  }
+  @media screen and (max-width:896px) {
+    .box-3 > .text > p {
+      font-family: MontserratLight;
+      font-size: 13px;
+    }
+    .box-3 > .text > h4 {
+      font-family: MontserratBold;
+      font-size: 13px;
+    }
+  }
+  
+  

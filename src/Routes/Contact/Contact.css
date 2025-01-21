@@ -1,0 +1,229 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: MontserratLight;
+    src: url(/src/Assets/Montserrat-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratBold;
+    src: url(/src/Assets/Montserrat-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Bebas;
+    src: url(/src/Assets/BebasNeue-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: MontserratItalic ;
+    src: url(/src/Assets/Montserrat-Italic.ttf);
+  }
+  
+
+  /* CONTACT CONTAINER  */
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 150px 70px;
+  }
+  
+  .contact-container > .contact-con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  
+  .contact-con > .contact-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-info > .address-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .address-info > .text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .address-info > .text > .icons {
+    color: #ff4500;
+    font-size: 17px;
+  }
+  .address-info > .text > h5 {
+    color: #353333;
+    font-size: 15px;
+    font-family: MontserratBold;
+  }
+  .address-info > p {
+    font-family: MontserratLight;
+    font-size: 14px;
+    color: #353333;
+  }
+  
+  .contact-info > .phone-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .phone-info > .text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .phone-info > .text > .icons {
+    color: #ff4500;
+    font-size: 17px;
+  }
+  .phone-info > .text > h5 {
+    color: #353333;
+    font-size: 15px;
+    font-family: MontserratBold;
+  }
+  .phone-info > .call-tag {
+    display: flex;
+    font-family: MontserratLight;
+    gap: 10px;
+  }
+  .phone-info > .call-tag > a:nth-child(1) {
+    font-size: 14px;
+    color: #353333;
+    border-right: 1px solid black;
+    height: 12px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .phone-info > .call-tag > a {
+    font-size: 14px;
+    color: #353333;
+    height: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info > .support-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .support-info > .text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .support-info > .text > .icons {
+    color: #ff4500;
+    font-size: 17px;
+  }
+  .support-info > .text > h5 {
+    color: #353333;
+    font-size: 15px;
+    font-family: MontserratBold;
+  }
+  .support-info > p {
+    font-family: MontserratLight;
+    font-size: 14px;
+    color: #353333;
+  }
+  
+  .message-con {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .message-con > form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .message-con > form > input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    border: 0.5px solid #353333;
+  }
+  .message-con > form > textarea {
+    width: 100%;
+    height: 80px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    border: 0.5px solid #353333;
+  }
+  .message-con > form > button {
+    /* width: 130px; */
+    height: 40px;
+    border: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: #6496cd;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .map-con {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    border: none;
+  }
+  
+  .map-con > iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media screen and (max-width:896px) {
+    .contact-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 40px;
+      padding: 150px 10px;
+    }
+  }
+  
+  
+  

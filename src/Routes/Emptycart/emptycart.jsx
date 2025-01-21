@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TbShoppingBag } from "react-icons/tb";
+import './Empty.css';
 
 function Emptycart() {
 

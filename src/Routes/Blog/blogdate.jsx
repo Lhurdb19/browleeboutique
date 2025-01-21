@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Blog.css';
 
 function Blogdate() {
     const blogDate = new Date("2024-01-06T02:58:00");
