@@ -61,12 +61,12 @@
     font-family: MontserratLight;
   }
   .link-2 > .link-shop {
-    color: #6496cd;
+    color:  #284697;
     font-size: 12px;
     cursor: pointer;
   }
   .link-2 > .link-ship {
-    color: #6496cd;
+    color:  #284697;
     font-size: 12px;
     cursor: pointer;
   }
@@ -212,7 +212,7 @@
   }
   
   .payment-methods > button:hover {
-    color: #6496cd;
+    color:  #284697;
   }
   .shipping-form {
     width: 100%;

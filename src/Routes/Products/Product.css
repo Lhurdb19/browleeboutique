@@ -155,7 +155,7 @@
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: #6496cd;
+    background-color:  #284697;
     color: white;
     cursor: pointer;
     margin-bottom: 10px;
@@ -196,7 +196,7 @@
       padding: 5px;
       border-radius: 5px;
       border: none;
-      background-color: #6496cd;
+      background-color:  #284697;
       color: white;
       cursor: pointer;
       margin-bottom: 10px;
@@ -322,7 +322,7 @@
     padding: 5px;
     border-radius: 10px;
     border: none;
-    background-color: #6496cd;
+    background-color:  #284697;
     color: white;
     cursor: pointer;
   }
@@ -424,7 +424,7 @@
       font-size: 15px;
     }
     .door-con > a {
-      color: #6496cd;
+      color:  #284697;
     }
   }
   
@@ -517,7 +517,7 @@
     left: 5%;
     top: 45%;
     color: white;
-    background-color: #6496cd;
+    background-color:  #284697;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -527,7 +527,7 @@
     right: 2.5%;
     top: 45%;
     color: white;
-    background-color: #6496cd;
+    background-color:  #284697;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -539,7 +539,7 @@
       left: 5%;
       top: 50%;
       color: white;
-      background-color: #6497cd;
+      background-color:  #284697;
       border-radius: 50%;
     }
     .image-overlay-content > .arrow-right {
@@ -548,7 +548,7 @@
       right: 5%;
       top: 50%;
       color: white;
-      background-color: #6497cd;
+      background-color:  #284697;
       border-radius: 50%;
     }
   }

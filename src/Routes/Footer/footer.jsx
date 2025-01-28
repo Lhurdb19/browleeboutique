@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 import './Footer.css';
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   useEffect(()=> {
     Aos.init({duration: 1000})
   }, []);
@@ -67,7 +68,7 @@ function Footer() {
           </div>
           </div>
         </div>
-      <footer>&copy;2024 <Link to={'/'}>HejiDev.</Link> All Right Reserved.</footer>
+      <footer>&copy;{currentYear} <Link to={'/'}>HejiDev.</Link> All Right Reserved.</footer>
     </div>
   )
 }

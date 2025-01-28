@@ -15,7 +15,7 @@
     z-index: 99;
     padding: 10px 70px 10px 70px;
     background-color: #fff;
-    border-bottom: 1px solid #6496cd;
+    border-bottom: 1px solid  #284697;
 }
 
 @media screen and (max-width:896px) {
@@ -46,7 +46,7 @@
         z-index: 10;
         top: 50px;
         background-color: #fff;
-        border-bottom: 0.2px solid #6496cd;
+        border-bottom: 0.2px solid  #284697;
     }
     
     .search-bar > form {
@@ -62,7 +62,7 @@
         outline: none;
         padding: 10px;
         border-radius: 25px;
-        border: 1px solid #6496cd;
+        border: 1px solid  #284697;
         background-color: transparent;
       }
   }
@@ -79,12 +79,12 @@
 .nav-combine > a {
     font-family: MontserratBold;
     font-size: 30px;
-    color: #6496cd;
+    color:  #284697;
 }
 
 .nav-combine > .menu-bar {
     display: none;
-    color: #6496cd;
+    color:  #284697;
 }
 
 @media screen and (max-width:896px) {
@@ -111,7 +111,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    color: #6496cd;
+    color:  #284697;
 }
 
 @media screen and (max-width:896px) {
@@ -129,7 +129,7 @@
         position: fixed;
         z-index: 100;
         transform: translateX(-100%);
-        background-color: #6496cd;
+        background-color:  #284697;
         transition: all 0.3s ease-in-out;
     }
 
@@ -243,7 +243,7 @@
 }
 
 .combination > a {
-    color: #6496cd;
+    color:  #284697;
 }
 
 @media screen and (max-width:896px) {
@@ -274,17 +274,17 @@
 
 .auth > .sign-up {
     width: 58px;
-    color: #6496cd;
-    border-right: 0.2px solid #6496cd;
-    border-top: 0.5px solid #6496cd;
-    border-bottom: 0.5px solid #6496cd;
+    color:  #284697;
+    border-right: 0.2px solid  #284697;
+    border-top: 0.5px solid  #284697;
+    border-bottom: 0.5px solid  #284697;
     padding: 5px;
     font-size: 12px;
     border-top-right-radius: 10px;
 }
 
 .auth > .login {
-    background-color: #6496cd;
+    background-color:  #284697;
     padding: 5px;
     font-size: 13px;
     border-bottom-left-radius: 10px;
@@ -333,15 +333,21 @@
 
 .user-profile{
     width: 200px;
+    top: 40.5px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    gap: 10px;
-    top: 45px;
-    padding: 10px;
-    background-color: #6496cd;
+    gap: 6px;
     position: absolute;
+    padding: 10px;
+    background: #fff;
+    z-index: 100;
+    left: 5px;
+    border-bottom: 2px solid #284697;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.07)
 }
 
 .user-profile > .wrapper {
@@ -353,36 +359,36 @@
 }
 
 .wrapper > a {
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: MontserratLight;
-    color: white;
-    gap: 10px;
+    color: #284697;
+    gap: 6px;
 }
 
 .wrapper > button {
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: MontserratLight;
-    color: white;
-    gap: 10px;
+    color: #284697;
+    gap: 6px;
     cursor: pointer;
     background-color: transparent;
     border: none;
 }
 
 .user-profile > button {
-    font-size: 15px;
+    font-size: 11px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: MontserratLight;
-    color: white;
-    gap: 10px;
+    color: #284697;
+    gap: 6px;
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -432,9 +438,9 @@
         outline: none;
         padding: 10px;
         border-radius: 25px;
-        border: 1px solid #6496cd;
+        border: 1px solid  #284697;
         background-color: transparent;
-        color: #6496cd;
+        color:  #284697;
   }
 
 @media screen and (max-width:896px) {
@@ -475,7 +481,7 @@
 .product-cart {
     display: flex;
     align-items: center;
-    color: #6496cd;
+    color:  #284697;
     cursor: pointer;
     position: relative;
 }
@@ -487,7 +493,7 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    color: #6496cd;
+    color:  #284697;
 }
 
 @media screen and (max-width:896px) {
@@ -495,6 +501,5 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-
     }
 }

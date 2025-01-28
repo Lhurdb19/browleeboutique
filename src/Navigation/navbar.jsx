@@ -175,8 +175,7 @@ function Navbar({ user, handleLogout }) {
               type="text"
               placeholder="Search product by name"
               value={searchProduct}
-              onChange={(e) => setSearchProduct(e.target.value)}
-            />
+              onChange={(e) => setSearchProduct(e.target.value)} />
           </form>
 
           {!user ? (
