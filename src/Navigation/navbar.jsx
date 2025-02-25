@@ -189,7 +189,7 @@ function Navbar({ user, handleLogout }) {
             </div>
           ) : (
             <div className="user-drop" onClick={handleUserDrop}>
-              <span>Welcome! {user?.firstName}</span>
+              <span>Welcome! {user?.firstName.slice(0, 4)}</span>
               {userDrop ? (
                 <MdKeyboardArrowUp style={{ fontSize: "20px" }} />
               ) : (

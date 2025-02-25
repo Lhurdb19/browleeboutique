@@ -63,7 +63,7 @@
   
   .women-fashion-con {
     width: 100%;
-    height: 420px;
+    height: 620px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -162,7 +162,7 @@
   
   .men-fashion-con {
     width: 100%;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -230,7 +230,7 @@
   
   .shoes-fashion-con {
     width: 100%;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -286,7 +286,7 @@
   
   .kids-fashion-con {
     width: 100%;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -347,7 +347,7 @@
   
   .accessories-fashion-con {
     width: 100%;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;

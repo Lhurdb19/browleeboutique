@@ -71,7 +71,7 @@ function Home() {
         </div>
       </div>
       <div className="collection-container">
-        <VerticalMode />
+        {/* <VerticalMode /> */}
       </div>
 
         <Trendproduct/>

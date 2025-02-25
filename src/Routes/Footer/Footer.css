@@ -46,8 +46,8 @@
   }
   
   .footer-card > a {
-    font-family: Bebas;
-      font-size: 40px;
+    font-family: MontserratBold;
+      font-size: 30px;
       color: white;
   }
   
@@ -167,15 +167,16 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-    background-color: #d0cccc;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    /* background-color: #; */
     padding: 20px;
     font-size: 14px;
     font-family: MontserratLight;
-    color: #353333;
+    color: #fff;
   }
   
   footer > a {
-    color: #0f2b49;
+    color: #fff;
   }
   footer > a:hover {
     color: #ff4500;

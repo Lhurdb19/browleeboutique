@@ -25,7 +25,7 @@ function Footer() {
         <div className="contact-card">
             <Link>About</Link>
             <Link>FAQ</Link>
-            <Link>Contact</Link>
+            <Link to={'/contact'}>Contact</Link>
 
         </div>
         <div className="contact-link">

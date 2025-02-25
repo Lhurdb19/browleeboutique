@@ -26,7 +26,8 @@ function Product() {
 
   return (
     <Fragment>
-
+      <div className="product-display-image">
+      </div>
       <div className="product-mother">
         <div className="product-list">
           {filteredProducts.map((product) => (
