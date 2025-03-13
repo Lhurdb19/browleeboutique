@@ -51,7 +51,7 @@ function Navbar({ user, handleLogout }) {
   
 
   const NavLink = ({ isActive }) => ({
-    color: isActive ? "#007bff" : "",
+    color: isActive ? "red" : "",
   });
 
   const filteredProducts = productList.filter((product) =>

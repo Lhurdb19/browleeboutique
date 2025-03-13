@@ -146,8 +146,8 @@
     padding: 5px;
     border-radius: 5px;
     border: none;
-    border: 0.5px solid #284697;
-    color: #284697;
+    border: 0.5px solid #222;
+    color: #222;
     cursor: pointer;
     margin-bottom: 10px;
     font-size: 15px;
@@ -157,6 +157,15 @@
     background-color: #d0cece;
     cursor: not-allowed;
     border: none;
+    color: #767272;
+  }
+
+  .trend-text > .btn > button:hover {
+    background-color: #222;
+    color: #fff;
+  }
+  .trend-text > .btn > button:disabled:hover {
+    background-color: #d0cece;
     color: #767272;
   }
   
@@ -213,7 +222,6 @@
       padding: 5px;
       border-radius: 5px;
       border: none;
-      background-color:  #284697;
       color: white;
       cursor: pointer;
       margin-bottom: 10px;
@@ -225,8 +233,8 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    color: #284697;
-    border: 0.5px solid #284697;
+    color: #16e73c;
+    border: 0.5px solid #16e73c;
     font-size: 17px;
     cursor: pointer;
     border-radius: 5px;
@@ -239,7 +247,8 @@
   
   .trend-container > button:hover {
     color: #f2f0f0;
-    background-color: #284697;
+    background-color: #222;
     transform: translateX(5px);
     transition: all 0.3s ease-in-out;
+    border: none;
   }

@@ -19,7 +19,7 @@ function Home() {
           <Responsive />
           <div className="text">
             <h2>Women's fashion</h2>
-            <p>769 items</p>
+            <h3>769 items</h3>
             <Link to={"/womenfashion"}>SHOP NOW</Link>
           </div>
         </div>
@@ -31,7 +31,7 @@ function Home() {
             />
             <div className="text">
               <h2>Men's fashion</h2>
-              <p>358 items</p>
+              <h3>358 items</h3>
               <Link to={"/menfashion"}>SHOP NOW</Link>
             </div>
           </div>
@@ -42,7 +42,7 @@ function Home() {
             />
             <div className="text">
               <h2>Shoes</h2>
-              <p>159 items</p>
+              <h3>159 items</h3>
               <Link to={"/shoesfashion"}>SHOP NOW</Link>
             </div>
           </div>
@@ -53,7 +53,7 @@ function Home() {
             />
             <div className="text">
               <h2>Kid's fashion</h2>
-              <p>257 items</p>
+              <h3>257 items</h3>
               <Link to={"/kidsfashion"}>SHOP NOW</Link>
             </div>
           </div>
@@ -64,7 +64,7 @@ function Home() {
             />
             <div className="text">
               <h2>Accessories</h2>
-              <p>762 items</p>
+              <h3>762 items</h3>
               <Link to={"/accessories"}>SHOP NOW</Link>
             </div>
           </div>
